@@ -139,7 +139,6 @@ export default function DataTable() {
             rowCount={tableDataRows.length}
           />
           <TableBody>
-            {tableDataRows.length < 1 && <Typography>No result</Typography>}
             {visibleRows.map((row, index) => {
               const isItemSelected = isSelected(row.id);
               const labelId = `enhanced-table-checkbox-${index}`;
