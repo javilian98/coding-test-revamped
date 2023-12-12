@@ -67,7 +67,7 @@ const Home = () => {
             <FileUpload />
           )}
           {isFileUploaded && <DataTableToolbar />}
-          {tableDataRows.length > 0 && renderTable()}
+          {tableDataRows.length > 0 ? renderTable() : <Box sx={{ p: 2 }}>No results found</Box>}
         </CardContainer>
       </Container>
       <FilterDrawer />
